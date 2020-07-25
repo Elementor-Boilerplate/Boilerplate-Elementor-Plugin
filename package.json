@@ -1,0 +1,37 @@
+{
+  "name": "elementor-hello-world",
+  "version": "1.0.0",
+  "description": "This is a sample plugin to demonstrate how you can write extentions (plugins) to add custom functionality to [Elementor](https://github.com/pojome/elementor/)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elementor/elementor-hello-world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elementor/elementor-hello-world/issues"
+  },
+  "homepage": "https://github.com/elementor/elementor-hello-world#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.10",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^4.0.0",
+    "file-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

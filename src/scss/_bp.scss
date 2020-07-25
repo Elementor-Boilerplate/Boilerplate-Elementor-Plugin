@@ -1,0 +1,47 @@
+/* =========================================
+		BP - Breakpoint Mixin
+   ========================================= */
+
+
+/**
+ * Helper to make it
+ * easier to print
+ * media queries
+ *
+ * @param $query
+ * @param $context
+ */
+ 
+@mixin bp($breakpoint) {
+    @if $breakpoint == xxs {
+        @media (max-width: 400px) { @content; }
+    }
+    
+    @else if $breakpoint == xs {
+        @media (max-width: 767px) { @content; }
+    }
+
+    @else if $breakpoint == sm {
+        @media (min-width: 768px) { @content; }
+    }
+
+    @else if $breakpoint == md {
+        @media (min-width: 992px) { @content; }
+    }
+
+    @else if $breakpoint == lg {
+        @media (min-width: 1200px) { @content; }
+    }
+
+    @else if $breakpoint == xl {
+        @media (min-width: 1400px) { @content; }
+    }
+    
+    @else if type-of($breakpoint) == 'number' {
+        @media (min-width: $breakpoint + 'px') { @content; }
+    }
+
+    @else {
+        @warn "Breakpoint mixin supports: xxs, xs, sm, md, lg, xl, or number";
+    }
+}

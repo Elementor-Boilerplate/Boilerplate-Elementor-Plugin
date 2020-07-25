@@ -1,0 +1,14 @@
+.vs/
+.vscode/
+node_modules/
+.sass-cache/
+build/
+log/
+vendor/
+composer.lock
+.DS_Store
+.project
+Thumbs.db
+package-lock.json
+*.log
+*.map
